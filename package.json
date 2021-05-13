@@ -15,7 +15,9 @@
     "core-js": "^3.6.5",
     "express": "^4.17.1",
     "path": "^0.12.7",
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-meta": "^2.4.0",
+    "vue-router": "^3.5.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

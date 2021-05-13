@@ -15,7 +15,7 @@
         <a class="link" href="">FILMES</a>
         <a class="link" href="">VIDEOCLIPES</a>
         <a class="link" href="">OUTROS</a>
-        <a class="link" href="">A PRODUTORA</a>
+        <a class="link" href="">PRODUTORA</a>
         <a class="link" href="">CONTATO</a>
       </div>
 
@@ -132,7 +132,7 @@
   @media only screen and (max-width: 767px) {
     img {
       position: unset;
-      margin-top: 30vw;
+      margin-top: 22vw;
       margin-left: auto;
       margin-right: auto;
       width: 60%;
