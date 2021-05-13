@@ -30,7 +30,7 @@ export default {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 0;
   }
 
