@@ -19,8 +19,9 @@
         <a class="link" href="">CONTATO</a>
       </div>
 
-
     </div>
+
+  
   </div>
 
 
@@ -148,18 +149,58 @@
       text-align: center;
     }
 
-  .blue:hover{
-    color: #2e62ab;
-  }
+    .blue:hover{
+      color: #2e62ab;
+    }
 
-  .orange:hover {
-    color: #e88f00;
-  }
+    .orange:hover {
+      color: #e88f00;
+    }
 
-  .pink:hover {
-    color: #e62260;
-  }
+    .pink:hover {
+      color: #e62260;
+    }
   
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+
+    img {
+      top: 40%;
+    }
+
+    .menu {
+      top: 42%;
+    }
+
+    a {
+      font-size: 12px;
+    }
+
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1365px) {
+
+    a {
+      font-size: 18px;
+    }
+
+  }
+
+  @media only screen and (min-width: 1532px) and (max-width: 1700px) {
+
+    a {
+      font-size: 24px;
+    }
+
+  }
+
+  @media only screen and (min-width: 1701px) {
+
+    a {
+      font-size: 30px;
+    }
+
   }
 
 
