@@ -24,7 +24,7 @@ export default {
   @import url("https://use.typekit.net/mip4zka.css");
 
   #app {
-    font-family: "futura-pt", sans-serif;
+    font-family: "futura-pt-condensed", sans-serif;
   }
 
 </style>

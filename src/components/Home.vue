@@ -112,6 +112,7 @@
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 10px;
+    letter-spacing: 2px;
   }
 
   a:hover {
