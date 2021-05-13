@@ -93,7 +93,7 @@
     top: 30%;
     left: 38%;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   .menu {
@@ -101,7 +101,7 @@
     top: 32%;
     left: 58%;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   a {
