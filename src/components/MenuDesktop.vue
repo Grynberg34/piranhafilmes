@@ -117,5 +117,18 @@
     color: #e62260;
   }
 
+  @media only screen and (max-width: 767px) {
+    
+  }
+
+  @media only screen and (min-width: 1700px) {
+
+    .link {
+      font-size: 22px;
+    }
+
+
+  }
+
 
 </style>
