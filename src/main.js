@@ -7,6 +7,7 @@ import Meta from 'vue-meta';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Filmes from './components/Filmes.vue';
+import Home from './components/Home.vue';
 
 Vue.use(BootstrapVue);
 Vue.use(Router);
@@ -15,7 +16,8 @@ Vue.use(Vuex);
 Vue.use(Router);
 
 const routes = [
-  { path: "/filmes", component: Filmes }
+  { path: "/", name:'home', component: Home },
+  { path: "/filmes", name:'filmes', component: Filmes }
 ];
 
 const router = new Router({
