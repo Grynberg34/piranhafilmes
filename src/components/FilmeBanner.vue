@@ -43,7 +43,7 @@ export default {
 
     .filme__status {
         display: inline-block;
-        width: 10px;
+        width: 12px;
         margin-bottom: 3px;
     }
 

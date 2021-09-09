@@ -1,0 +1,48 @@
+[
+
+    {
+        "id":"1",
+        "name":"Alienígenas do Passado",
+        "img":"/filmes/01.png",
+        "ano":"inédito",
+        "status": {
+            "tag": "pos",
+            "img": "/filmes/q1.png"
+        }
+    },
+
+    {
+        "id":"2",
+        "name":"O Som dos Metais",
+        "img":"/filmes/02.png",
+        "ano":"2020",
+        "status": {
+          "tag": "lançados",
+          "img": "/filmes/q3.png"
+        }
+    },
+
+    {
+        "id":"3",
+        "name":"Peixe",
+        "img":"/filmes/03.png",
+        "ano":"2019",
+        "status": {
+            "tag": "lançados",
+            "img": "/filmes/q3.png"
+        }
+    },
+
+    {
+        "id":"4",
+        "name":"O Som dos Metais",
+        "img":"/filmes/04.png",
+        "ano":"2018",
+        "status": {
+            "tag": "lançados",
+            "img": "/filmes/q3.png"
+        }
+    }
+
+
+]

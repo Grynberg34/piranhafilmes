@@ -3,29 +3,39 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 order-1">
                     <MenuDesktop/>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-md-2 order-3">
                     
                     <div class=" filmes">
 
                         <h1 class="title">Filmes</h1>
 
-                        <FilmeBanner img="/filmes/01.png" name="Alienígenas do Passado" ano="| inédito" status="/filmes/q1.png" />
+                        <FilmeBanner v-for="filme in filmesFiltrados" v-bind:key="filme.id" :name="filme.name" :img="filme.img" :ano="filme.ano" :status="filme.status.img" :filme="filme"/>
 
-                        <FilmeBanner img="/filmes/02.png" name="O Som dos Metais" ano="| 2020" status="/filmes/q3.png"  />
-
-                        <FilmeBanner img="/filmes/03.png" name="Peixe" ano="| 2019" status="/filmes/q3.png"/>
-
-                        <FilmeBanner img="/filmes/04.png" name="Salve Todos" ano="| 2018" status="/filmes/q3.png"  />
 
                     </div>
 
 
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-1 order-md-3"></div>
+
+                <div class="col-md-2 order-md-4 order-2">
+
+                    <div class="filtro">
+                        <h3 class="filtro__title">Filtrar</h3>
+
+                        <ul class="filtro__lista">
+                            <li class="filtro__lista__opcao" id="todos" v-on:click="mudarFiltro($event)">Todos</li>
+                            <li class="filtro__lista__opcao orange" id="pre" v-on:click="mudarFiltro($event)">Pré-Produção</li>
+                            <li class="filtro__lista__opcao pink" id="lançados" v-on:click="mudarFiltro($event)">Lançados</li>
+                            <li class="filtro__lista__opcao blue" id="pos" v-on:click="mudarFiltro($event)">Pós-Produção</li>
+                        </ul>
+
+                        <input id="filtro" type="text" v-model="filtro">
+                    </div>
 
                 </div>
             </div>
@@ -38,12 +48,52 @@
 <script>
   import FilmeBanner from './FilmeBanner.vue';
   import MenuDesktop from './MenuDesktop.vue';
+  import json from '../assets/filmes.json'
+
 
     export default {
         name:'Filmes',
         components: {
             MenuDesktop,
             FilmeBanner
+        },
+        data(){
+            return {
+                filmes: json,
+                filtro: 'todos'
+            }
+        },
+        computed: {
+
+            filmesFiltrados: function() {
+
+                console.log(this.filtro)
+
+                if (this.filtro == 'todos') {
+                    return this.filmes;
+                }
+
+                else {
+                    return this.filmes.filter((filme) => {
+                        return filme.status.tag.match(this.filtro);
+                    });
+                }
+            },
+
+        },
+        methods: {
+            mudarFiltro(event) {
+                this.filtro = event.target.id;
+
+                var filtros = document.getElementsByClassName('filtro__lista__opcao');
+
+                for (var i=0; i < filtros.length; i++ ) {
+                    filtros[i].style.textDecoration = "none";
+                }
+
+                event.target.style.textDecoration = "overline underline"
+                
+            }
         }
     }
         
@@ -54,10 +104,8 @@
 <style scoped>
 
     .content {
-        min-height: 100vh;
-        height: 100%;
-        width: 100vw;
-        background-color: black;    
+        background-color: black;   
+        min-height: 100vh; 
     }
 
     .title {
@@ -76,5 +124,75 @@
         margin-bottom: 8vw;
     }
 
+    .filtro {
+        margin-top: 16vw;
+        position: fixed;
+        width: 15%;
+    }
+
+    .filtro__title {
+        font-size: 24px;
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 4vw;
+    }
+
+    .filtro__lista {
+        list-style-type: square;
+        padding-left: 0;
+    }
+
+    .filtro__lista__opcao {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: white;
+        margin-bottom: 2vw;
+        cursor: pointer;
+        text-underline-position: under;
+        user-select: none;
+
+    }
+
+    .filtro__lista__opcao:first-of-type {
+        text-decoration: underline overline;
+    }
+
+    .blue{
+        color: #2e62ab;
+    }
+
+    .orange {
+        color: #e88f00;
+    }
+
+    .pink {
+        color: #e62260;
+    }
+
+    input {
+        display: none;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .title {
+            font-size: 40px;
+            margin-top: 20vw;
+            margin-bottom: 10vw;
+        }
+
+        .filme {
+            width: 90%;
+            margin-bottom: 14vw;
+        }
+
+        .filtro {
+            position: unset;
+            width: unset;
+        }
+    }
 
 </style>
