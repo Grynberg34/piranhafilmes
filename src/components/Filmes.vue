@@ -63,6 +63,10 @@
                 filtro: 'todos'
             }
         },
+        mounted() {
+            this.activeMenu();
+            this.mobileMenu();
+        },
         computed: {
 
             filmesFiltrados: function() {
@@ -93,6 +97,16 @@
 
                 event.target.style.textDecoration = "overline underline"
                 
+            },
+            activeMenu() {
+                document.getElementsByClassName('link')[0].style.color = "white";
+            },
+            mobileMenu() {
+                if (window.innerWidth < 768) {
+                    document.getElementsByClassName('filtro__title')[0].innerText = 'Filmes';
+                    document.getElementsByClassName('title')[0].style.display = "none";
+
+                }
             }
         }
     }
@@ -178,10 +192,15 @@
     }
 
     @media only screen and (max-width: 767px) {
+        
         .title {
             font-size: 40px;
             margin-top: 20vw;
             margin-bottom: 10vw;
+        }
+
+        .filmes {
+            margin-bottom: 30vw;
         }
 
         .filme {
@@ -192,6 +211,22 @@
         .filtro {
             position: unset;
             width: unset;
+        }
+
+        .filtro__title {
+            font-size: 50px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .filtro__lista {
+            padding-left: 38vw;
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+        }
+
+        .filtro__lista__opcao {
+            margin-bottom: 5vw;
         }
     }
 

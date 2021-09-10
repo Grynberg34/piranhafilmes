@@ -33,6 +33,7 @@
   export default {
     mounted() {
       this.onLoad();
+      this.mobileMenu();
     },
     methods: {
       onLoad() {
@@ -71,10 +72,32 @@
             anchor[e].style.display = 'block';
           }
         }
-
-       
-
       },
+      mobileMenu() {
+        var icons = document.getElementsByClassName('icon');
+
+        function abrirMenu(){
+          document.getElementsByClassName("menu")[0].style.display = "block";
+          for (var i=0; i < icons.length; i++) {
+            icons[i].removeEventListener("click", abrirMenu);
+            icons[i].addEventListener("click", fecharMenu);
+            icons[i].style.transform = "rotate(90deg)";
+          }
+        }
+
+        function fecharMenu(){
+          document.getElementsByClassName("menu")[0].style.display = "none";
+          for (var i=0; i < icons.length; i++) {
+            icons[i].removeEventListener("click", fecharMenu);
+            icons[i].addEventListener("click", abrirMenu);
+            icons[i].style.transform = "rotate(-180deg)"
+          }
+        }
+
+        for (var i=0; i < icons.length; i++) {
+          icons[i].addEventListener("click", abrirMenu)
+        }
+      }
     },
   }
 
@@ -141,6 +164,7 @@
     #sidebar {
       position: unset;
       width: unset;
+      margin-top: 10vw;
     }
 
     .logo {
@@ -149,6 +173,12 @@
 
     .menu {
       display: none;
+      margin-top: 10vw;
+      padding-top: 10vw;
+      padding-bottom: 10vw;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+      width: unset
     }
 
     .img {
@@ -156,10 +186,12 @@
     }
 
     .icon {
-      width: 7%;
+      width: 29%;
       position: absolute;
-      bottom: 10%;
-      right: 15%;
+      bottom: -6%;
+      right: 4%;
+      z-index: 999;
+      padding: 10vw;
     }    
 
   }

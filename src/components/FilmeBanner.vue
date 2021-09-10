@@ -1,6 +1,6 @@
 <template>
     <div class="filme">
-        <h2 class="filme__title">{{name}} <span class="filme__ano">{{ano}}</span> <img class="filme__status" v-bind:src="status" alt=""></h2>
+        <h2 class="filme__title">{{name}} <span class="filme__ano">| {{ano}} | </span> <img class="filme__status" v-bind:src="status" alt=""></h2>
         <img class="filme__img" v-bind:src="img" alt="">
     </div>
 </template>
