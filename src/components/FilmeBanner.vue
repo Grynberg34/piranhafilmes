@@ -1,13 +1,15 @@
 <template>
-    <div class="filme">
-        <h2 class="filme__title">{{name}} <span class="filme__ano">| {{ano}} | </span> <img class="filme__status" v-bind:src="status" alt=""></h2>
-        <img class="filme__img" v-bind:src="img" alt="">
-    </div>
+    <router-link class="link" :to="{ name: 'filme', params: {id: uri}}">
+        <div class="filme">
+            <h2 class="filme__title">{{name}} <span class="filme__ano">| {{ano}} | </span> <img class="filme__status" v-bind:src="status" alt=""></h2>
+            <img class="filme__img" v-bind:src="img" alt="">
+        </div>
+    </router-link>
 </template>
 
 <script>
 export default {
-    props: ['name', 'img', 'ano', 'status'],
+    props: ['name', 'img', 'ano', 'status', 'uri'],
 }
 </script>
 
@@ -45,6 +47,10 @@ export default {
         display: inline-block;
         width: 12px;
         margin-bottom: 3px;
+    }
+
+    .link {
+        text-decoration: none;
     }
 
 </style>

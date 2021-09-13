@@ -12,7 +12,7 @@
 
                         <h1 class="title">Filmes</h1>
 
-                        <FilmeBanner v-for="filme in filmesFiltrados" v-bind:key="filme.id" :name="filme.name" :img="filme.img" :ano="filme.ano" :status="filme.status.img" :filme="filme"/>
+                        <FilmeBanner v-for="filme in filmesFiltrados" v-bind:key="filme.id" :name="filme.name" :img="filme.img" :ano="filme.ano" :status="filme.status.img" :uri="filme.uri" :filme="filme"/>
 
 
                     </div>
@@ -63,7 +63,7 @@
                 filtro: 'todos'
             }
         },
-        mounted() {
+        beforeCreate() {
             this.activeMenu();
             this.mobileMenu();
         },
