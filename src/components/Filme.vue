@@ -20,7 +20,7 @@
                     <div class="galeria">
                         <div class="row">
                             <div v-for="(item) in filme[0].galeria" v-bind:key="item" class="col-4">
-                                <img @click="modalShow = !modalShow, changeSrc($event)" class="galeria__img" :src="item" alt="">
+                                <img @click="changeSrc($event)" class="galeria__img" :src="item" alt="">
                                 
                             </div>
                         </div>
@@ -61,7 +61,7 @@
 
         </div>
 
-        <Modal :src="src" :modalShow="modalShow"/>
+        <Modal :src="src"/>
 
     </div>
 
@@ -94,7 +94,6 @@
                 filmes: json,
                 filme: Object,
                 color: String,
-                modalShow: false,
                 src: ''
             }
         },
@@ -133,10 +132,12 @@
             },
             scrollToTop() {
                 window.scrollTo(0,0);
+                this.$store.commit('reset')
             },
             changeSrc(event) {
                this.src = event.target.src;
-            }
+               this.$store.commit('modalShowHide');
+            },
         }
     }
         

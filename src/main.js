@@ -9,6 +9,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Filmes from './components/Filmes.vue';
 import Filme from './components/Filme.vue';
 import Home from './components/Home.vue';
+import { store } from './store';
 
 Vue.use(BootstrapVue);
 Vue.use(Router);
@@ -31,5 +32,6 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-  router
+  router,
+  store
 }).$mount('#app')

@@ -1,12 +1,31 @@
 <template>
-    <b-modal size="lg" id="my-modal" v-model="modalShow">
+    <b-modal size="lg" id="my-modal" v-model="modalState" @hide="changeModal()">
         <img id="modal-img" :src="src" alt="">
     </b-modal>
 </template>
 
 <script>
 export default {
-    props: ['src', 'modalShow'],
+    props: ['src'],
+    computed: {
+        modalState: {
+            get()
+            {
+                return this.$store.getters['getModal'];
+            },
+            set()
+            {
+               
+            }
+        }
+    },
+    methods: {
+        changeModal() {
+            this.$store.commit('modalShowHide');
+        }
+    }
+ 
+    
 }
 </script>
 
