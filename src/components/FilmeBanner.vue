@@ -53,4 +53,12 @@ export default {
         text-decoration: none;
     }
 
+    @media only screen and (max-width: 767px) {
+
+        .filme {
+            width: 90%;
+            margin-bottom: 14vw;
+        }
+    }
+
 </style>
