@@ -63,7 +63,7 @@
                 filtro: 'todos'
             }
         },
-        beforeCreate() {
+        mounted() {
             this.activeMenu();
             this.mobileMenu();
         },

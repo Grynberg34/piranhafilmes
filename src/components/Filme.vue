@@ -17,6 +17,15 @@
                         <img :src="filme[0].poster" class="filme__img">
                     </div>
 
+                    <div class="galeria">
+                        <div class="row">
+                            <div v-for="(item) in filme[0].galeria" v-bind:key="item" class="col-4">
+                                <img @click="modalShow = !modalShow, changeSrc($event)" class="galeria__img" :src="item" alt="">
+                                
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="col-md-1"></div>
@@ -31,6 +40,16 @@
                             <h3 class="title">Ficha técnica</h3>
                             <li class="item" v-for="(item,key) in filme[0].ficha" v-bind:key="key"><b>{{key}}:</b> {{item}}</li>
                         </ul>
+
+                        <ul v-if="filme[0].prêmios" class="section premios">
+                            <h3 class="title">Prêmios</h3>
+                            <li class="item" v-for="(item) in filme[0].prêmios" v-bind:key="item">{{item}}</li>
+                        </ul>
+
+                        <ul v-if="filme[0].festivais" class="section festivais">
+                            <h3 class="title">Festivais</h3>
+                            <li class="item" v-for="(item) in filme[0].festivais" v-bind:key="item">{{item}}</li>
+                        </ul>
                     </div>
 
 
@@ -42,11 +61,16 @@
 
         </div>
 
+        <Modal :src="src" :modalShow="modalShow"/>
+
     </div>
+
+
 </template>
 
 <script>
   import MenuDesktop from './MenuDesktop.vue';
+  import Modal from './Modal.vue';
   import json from '../assets/filmes.json'
 
 
@@ -54,6 +78,7 @@
         name:'Filme',
         components: {
             MenuDesktop,
+            Modal
         },
         created(){
             this.getFilme();
@@ -62,17 +87,20 @@
         },
         mounted() {
             this.getColor();
+            this.scrollToTop();
         },
         data(){
             return {
                 filmes: json,
                 filme: Object,
-                color: String
+                color: String,
+                modalShow: false,
+                src: ''
             }
         },
         computed: {
             filmeUri () {
-            return this.$route.params.id
+                return this.$route.params.id
             }
         },
         methods: {
@@ -102,8 +130,13 @@
                 for (var i=0; i < titles.length; i++) {
                     titles[i].style.color = this.color
                 }
+            },
+            scrollToTop() {
+                window.scrollTo(0,0);
+            },
+            changeSrc(event) {
+               this.src = event.target.src;
             }
-
         }
     }
         
@@ -126,9 +159,8 @@
         width: 100%;
     }
 
-
     .filme__title {
-        font-size: 30px;
+        font-size: 26px;
         color: white;
         font-weight: 600;
         margin-bottom: 1vw;
@@ -147,12 +179,17 @@
 
     .info {
         margin-top: 16vw;
+        margin-bottom: 12vw;
     }
 
     .section {
         margin-top: 4vw;
         list-style: none;
         padding-left: 0;
+    }
+
+    .premios, .festivais {
+        list-style: square;
     }
 
     .title {
@@ -171,11 +208,67 @@
         margin-bottom: 1vw;
     }
 
+    .galeria {
+        margin-top: 8vw;
 
+    }
+
+    .galeria__button {
+        color: none;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .galeria__button:hover {
+        border: none;
+        outline: none;
+    }
+
+    .galeria__img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 2vw;
+        cursor: pointer;
+    }
 
     @media only screen and (max-width: 767px) {
-        
+        .filme {
+            margin-top:20vw;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
 
+        .filme__title {
+            margin-bottom: 5vw;
+        }
+
+        .filme__subtitle {
+            margin-bottom: 10vw;
+        }
+
+        .galeria {
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+        .info {
+            padding-left: 5vw;
+            padding-right: 5vw;
+            margin-bottom: 30vw;
+        }
+
+        .section {
+            margin-top: 20vw;
+        }
+
+        .title {
+            margin-bottom: 6vw;
+        }
+
+        .item {
+            margin-bottom: 3vw;
+        }
     }
 
 </style>

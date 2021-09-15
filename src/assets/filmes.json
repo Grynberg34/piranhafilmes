@@ -42,7 +42,14 @@
             "Apoio": "Centro Universitário UNA, Produtora Dígito Zero, Núcleo Audiovisual NAV, Centoeoito Filmes",
             "Produção": "Piranha Filmes",
             "Distribuição": "Piranha Filmes"    
-        }
+        },
+        "galeria": [
+            "/filmes/alienigenas/1.jpg",
+            "/filmes/alienigenas/2.jpg",
+            "/filmes/alienigenas/3.jpg",
+            "/filmes/alienigenas/4.jpg",
+            "/filmes/alienigenas/5.jpg"
+        ]
     },
 
     {
@@ -79,6 +86,10 @@
             "First-Time Filmmaker Sessions / First-Time Filmmaker Online Sessions", 
             "Les Mains Gauches | Online platform", 
             "CURVA DO RIO | Festival de Cinema Universitário"
+        ],
+        "galeria": [
+            "/filmes/som/1.jpg",
+            "/filmes/som/2.jpg"
         ]
     },
 
@@ -168,6 +179,13 @@
             "Melhor Atriz, Melhor Direção e Melhor Filme no 2ª TRANSFORMA - Festival de Cinema da Diversidade de Santa Catarina (2019)",
             "Menção Honrosa no 6º Lumiar - Festival Interamericano de Cinema Universitário (2019)",
             "Prêmio Júri MOV ACAMPA nas categorias 'A Liberdade é Lésbica' e 'Liberdade em Tempos de Cólera' no MOV - Festival Int. de Cinema Universitário de Pernambuco (2019)"
+        ],
+        "galeria": [
+            "/filmes/peixe/1.jpg",
+            "/filmes/peixe/2.jpg",
+            "/filmes/peixe/3.jpg",
+            "/filmes/peixe/4.jpg",
+            "/filmes/peixe/5.jpg"
         ]
     },
 
@@ -210,6 +228,13 @@
             "Lumiar – Festival Interamericano de Cinema Universitário (2018)",
             "22ª Mostra de Cinema de Tiradentes (2019)",
             "3º Metrô – Festival do Cinema Brasileiro Universitário (2019)"
+        ],
+        "galeria": [
+            "/filmes/salve/1.jpg",
+            "/filmes/salve/2.jpg",
+            "/filmes/salve/3.jpg",
+            "/filmes/salve/4.jpg",
+            "/filmes/salve/5.jpg"
         ]
     }
 
