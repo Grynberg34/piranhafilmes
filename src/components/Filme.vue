@@ -271,4 +271,12 @@
         }
     }
 
+    @media only screen and (min-width: 1600px) {
+
+        .filme__title {
+            font-size: 36px;
+        }
+
+    }
+
 </style>

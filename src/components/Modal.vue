@@ -25,7 +25,6 @@ export default {
         border: none;
     }
 
-
     .modal-footer {
         display: none !important;
     }
@@ -42,6 +41,22 @@ export default {
         .modal-content {
             margin-top: 30vw;
         }
+    }
+
+    @media only screen and (min-width: 1600px) {
+
+        .modal-content {
+            margin-top: 5vw;
+        }
+
+    }
+
+    @media only screen and (min-width: 1900px) {
+
+        .modal-content {
+            margin-top: 10vw;
+        }
+
     }
 
 </style>
