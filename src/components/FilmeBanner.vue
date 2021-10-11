@@ -54,11 +54,11 @@ export default {
         margin-right: auto;
         width: 100%;
         overflow: hidden;
+        transition: all 2s ease-in-out;
     }
 
     .filme__img:hover {
         transform: scale(1.25);
-        transition: 2s ease-in-out;
     }
     
 
