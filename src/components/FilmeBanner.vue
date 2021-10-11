@@ -1,8 +1,10 @@
 <template>
     <router-link class="link" :to="{ name: 'filme', params: {id: uri}}">
         <div class="filme">
-            <h2 class="filme__title">{{name}} <span class="filme__ano">| {{ano}} | </span> <img class="filme__status" v-bind:src="status" alt=""></h2>
-            <img class="filme__img" v-bind:src="img" alt="">
+            <h2 class="filme__title">{{name}} <span class="filme__ano">| {{ano}} </span></h2>
+            <div class="filme__box">
+                <img class="filme__img" v-bind:src="img" alt="">
+            </div>
         </div>
     </router-link>
 </template>
@@ -19,12 +21,15 @@ export default {
         margin-top: 4vw;
         cursor: pointer;
         width: 60%;
+        height: 100%;
+        max-height: 100%;
         margin-left: auto;
         margin-right: auto;
+        overflow: hidden;
     }
 
     .filme__title {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 400;
         color: white;
         text-transform: uppercase;
@@ -36,12 +41,26 @@ export default {
         color: #b8b8b8;
     }
 
+    .filme__box {
+        max-width: 100%;
+        max-height: 100%;
+        overflow: hidden;
+
+    }
+
     .filme__img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
+        overflow: hidden;
     }
+
+    .filme__img:hover {
+        transform: scale(1.25);
+        transition: 2s ease-in-out;
+    }
+    
 
     .filme__status {
         display: inline-block;
@@ -58,6 +77,18 @@ export default {
         .filme {
             width: 90%;
             margin-bottom: 14vw;
+        }
+
+        .filme_box {
+            max-width: unset;
+        }
+
+        .filme__img:hover {
+            transform: none;
+        }
+
+        .filme__title {
+            font-size: 16px;
         }
     }
 

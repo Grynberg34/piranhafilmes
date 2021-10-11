@@ -5,15 +5,12 @@
         "name":"Alienígenas do Passado",
         "uri": "alienigenas-do-passado",
         "img":"/filmes/01.png",
+        "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
         "poster":"/filmes/alienigenas/poster.jpg",
         "ano":"inédito",
         "duração": 9,
         "classificação": "Livre",
         "sinopse": "Um grupo de amigas investiga o boato da aparição de um portal intergaláctico que causou um acidente de carro. A verdade mudará suas vidas para sempre.",
-        "status": {
-            "tag": "pos",
-            "img": "/filmes/q1.png"
-        },
         "ficha" : {
             "Direção": "Daniela Cambraia",
             "Assistência de Direção": "Eduarda Viana",
@@ -57,15 +54,12 @@
         "name":"O Som dos Metais",
         "uri": "o-som-dos-metais",
         "img":"/filmes/02.png",
+        "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
         "poster":"/filmes/som/poster.jpg",
         "ano":"2020",
         "duração": 3,
         "classificação": "Livre",
         "sinopse": " Paula e Mariana, duas crianças do interior de Minas, decidem fugir da sua cidade rumo à praia, entrando no trem de carregamento de minério.",
-        "status": {
-          "tag": "lançados",
-          "img": "/filmes/q3.png"
-        },
         "ficha": {
             "Direção": "Mariana de Melo",
             "Roteiro": "Mariana de Melo e Yasmin Guimarães" ,
@@ -98,15 +92,12 @@
         "name":"Peixe",
         "uri": "peixe",
         "img":"/filmes/03.png",
+        "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
         "poster":"/filmes/peixe/poster.jpg",
         "ano":"2019",
         "duração": 17,
         "classificação": "14 anos",
         "sinopse": "Marina é uma jovem mulher que trabalha em Belo Horizonte realizando entregas com a sua bicicleta.",
-        "status": {
-            "tag": "lançados",
-            "img": "/filmes/q3.png"
-        },
         "ficha": {
             "Direção": "Yasmin Guimarães",
             "Produção": "Gabriel Quintão e Yasmin Guimarães" ,
@@ -194,6 +185,7 @@
         "name":"Salve Todos",
         "uri": "salve-todos",
         "img":"/filmes/04.png",
+        "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
         "poster":"/filmes/salve/poster.jpg",
         "ano":"2018",
         "duração": 11,
