@@ -11,38 +11,36 @@
 
                 <div class="col-md-6">
                     
-                    <div class="filme">
-                        <h1 class="filme__title">{{filme[0].name}}</h1>
-                        <h2 class="filme__subtitle">{{filme[0].ano}} | {{filme[0].duração}}' | {{filme[0].classificação}}</h2>
+                    <div class="outro">
+                        <h1 class="outro__title">{{outro[0].name}}</h1>
+                        <h2 class="outro__subtitle">{{outro[0].ano}} | {{outro[0].tipo}}</h2>
                         <div class="" id="video">
-                            <div class='embed-container'><iframe :src="filme[0].link" frameborder='0' allowfullscreen></iframe></div>
+                            <div v-if="outro[0].link" class='embed-container'><iframe :src="outro[0].link" frameborder='0' allowfullscreen></iframe></div>
                         </div>
                     </div>
 
                     <div class="info">
-                        <h3 class="title">Sinopse</h3>
-                        <p id="sinopse" class="item">{{filme[0].sinopse}}</p>
 
                         <ul class="section">
                             <h3 class="title">Ficha técnica</h3>
-                            <li class="item" v-for="(item,key) in filme[0].ficha" v-bind:key="key"><b>{{key}}:</b> {{item}}</li>
+                            <li class="item" v-for="(item,key) in outro[0].ficha" v-bind:key="key"><b>{{key}}:</b> {{item}}</li>
                         </ul>
 
-                        <ul v-if="filme[0].prêmios" class="section premios">
-                            <h3 class="title">Prêmios</h3>
-                            <li class="item" v-for="(item) in filme[0].prêmios" v-bind:key="item">{{item}}</li>
-                        </ul>
 
-                        <ul v-if="filme[0].festivais" class="section festivais">
-                            <h3 class="title">Festivais</h3>
-                            <li class="item" v-for="(item) in filme[0].festivais" v-bind:key="item">{{item}}</li>
-                        </ul>
+
+                        <div class="section" v-if="outro[0].temporadas">
+                            <h3 class="title">Temporadas</h3>
+                            <ul v-for="temporada in outro[0].temporadas" v-bind:key="temporada.Número" class="section">
+                                <li class="item" v-for="(item,key) in temporada" v-bind:key="key"><b>{{key}}:</b> {{item}}</li>
+                            </ul>
+                        </div>
+
                     </div>
 
                     <div class="galeria">
                         <h3 class="title">Galeria</h3>
                         <div class="row">
-                            <div v-for="(item) in filme[0].galeria" v-bind:key="item" class="col-4">
+                            <div v-for="(item) in outro[0].galeria" v-bind:key="item" class="col-4">
                                 <img @click="changeSrc($event)" class="galeria__img" :src="item" alt="">
                                 
                             </div>
@@ -67,17 +65,17 @@
 <script>
   import MenuDesktop from './MenuDesktop.vue';
   import Modal from './Modal.vue';
-  import json from '../assets/filmes.json'
+  import json from '../assets/outros.json'
 
 
     export default {
-        name:'Filme',
+        name:'Outro',
         components: {
             MenuDesktop,
             Modal
         },
         created(){
-            this.getFilme();
+            this.getoutro();
             this.redirect();
 
         },
@@ -87,26 +85,26 @@
         },
         data(){
             return {
-                filmes: json,
-                filme: Object,
+                outros: json,
+                outro: Object,
                 color: String,
                 src: ''
             }
         },
         computed: {
-            filmeUri () {
+            outroUri () {
                 return this.$route.params.id
             }
         },
         methods: {
-            getFilme() {
-                this.filme = this.filmes.filter(i => {
-                    return i.uri == this.filmeUri
+            getoutro() {
+                this.outro = this.outros.filter(i => {
+                    return i.uri == this.outroUri
                 })
             },
             redirect() {
-                if (this.filme.length < 1) {
-                    this.$router.push('/filmes')
+                if (this.outro.length < 1) {
+                    this.$router.push('/outros')
                 }
             },
             getColor() {
@@ -157,18 +155,18 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        min-height: 100vh;
+        min-height: 100vh; 
     }
 
-    .filme {
+    .outro {
         margin-top: 8vw;
     }
 
-    .filme__img {
+    .outro__img {
         width: 100%;
     }
 
-    .filme__title {
+    .outro__title {
         font-size: 26px;
         color: white;
         font-weight: 600;
@@ -177,7 +175,7 @@
         text-align: center;
     }
 
-    .filme__subtitle {
+    .outro__subtitle {
         font-size: 16px;
         color: #b2b2b2;
         font-weight: 400;
@@ -195,10 +193,6 @@
         margin-top: 4vw;
         list-style: none;
         padding-left: 0;
-    }
-
-    .premios, .festivais {
-        list-style: square;
     }
 
     .title {
@@ -247,7 +241,7 @@
     }
 
     @media only screen and (max-width: 767px) {
-        .filme {
+        .outro {
             margin-top:20vw;
             padding-left: 5vw;
             padding-right: 5vw;
@@ -261,11 +255,11 @@
             width: 100%;
         }
 
-        .filme__title {
+        .outro__title {
             margin-bottom: 5vw;
         }
 
-        .filme__subtitle {
+        .outro__subtitle {
             margin-bottom: 10vw;
         }
 
@@ -296,7 +290,7 @@
 
     @media only screen and (min-width: 1600px) {
 
-        .filme__title {
+        .outro__title {
             font-size: 36px;
         }
 

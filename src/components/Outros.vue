@@ -10,9 +10,9 @@
                     
                     <div class=" filmes">
 
-                        <h1 class="title">Filmes</h1>
+                        <h1 class="title">Outros Trabalhos</h1>
 
-                        <FilmeBanner v-for="filme in filmes" v-bind:key="filme.id" :name="filme.name" :img="filme.img" :ano="filme.ano" :uri="filme.uri" />
+                        <OutroBanner v-for="outro in outros" v-bind:key="outro.id" :name="outro.name" :img="outro.img" :ano="outro.ano" :tipo="outro.tipo" :uri="outro.uri" />
 
 
                     </div>
@@ -29,20 +29,20 @@
 </template>
 
 <script>
-  import FilmeBanner from './FilmeBanner.vue';
+  import OutroBanner from './OutroBanner.vue';
   import MenuDesktop from './MenuDesktop.vue';
-  import json from '../assets/filmes.json'
+  import json from '../assets/outros.json'
 
 
     export default {
-        name:'Filmes',
+        name:'Outros',
         components: {
             MenuDesktop,
-            FilmeBanner
+            OutroBanner
         },
         data(){
             return {
-                filmes: json,
+                outros: json,
                 filtro: 'todos'
             }
         },
@@ -64,11 +64,11 @@
                 
             },
             activeMenu() {
-                document.getElementsByClassName('link')[0].style.color = "white";
+                document.getElementsByClassName('link')[1].style.color = "white";
             },
             mobileMenu() {
                 if (window.innerWidth < 768) {
-                    document.getElementsByClassName('filtro__title')[0].innerText = 'Filmes';
+                    document.getElementsByClassName('filtro__title')[0].innerText = 'Outros Trabalhos';
                     document.getElementsByClassName('title')[0].style.display = "none";
 
                 }

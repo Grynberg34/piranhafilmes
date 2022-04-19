@@ -1,5 +1,5 @@
 <template>
-    <b-modal size="lg" id="my-modal" v-model="modalState" @hide="changeModal()">
+    <b-modal size="xl" id="my-modal" v-model="modalState" @hide="changeModal()">
         <img id="modal-img" :src="src" alt="">
     </b-modal>
 </template>
@@ -73,7 +73,7 @@ export default {
     @media only screen and (min-width: 1900px) {
 
         .modal-content {
-            margin-top: 10vw;
+            margin-top: 5vw;
         }
 
     }

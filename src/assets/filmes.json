@@ -1,13 +1,61 @@
 [
-
     {
         "id":"1",
+        "name":"Eu te amo é no sol",
+        "uri": "eu-te-amo-e-no-sol",
+        "img":"/filmes/05.png",
+        "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
+        "poster":"/filmes/teamoenosol/poster.jpg",
+        "ano":"2022",
+        "duração": 19,
+        "classificação": "16 anos",
+        "sinopse": "Mati reencontra Júlia, sua namorada, que agora vive em um lugar distante e frio. Lá, se deparam com a falta de identidade e a impossibilidade de voltar para casa.",
+        "ficha" : {
+            "Direção": "Yasmin Guimarães",
+            "Direção Assistente": "Daniela Cambraia",
+            "Roteiro Original": "Yasmin Guimarães",
+            "Produção": "Daniela Cambraia, Mariana de Melo, Yasmin Guimarães",
+            "Assistência de Produção": "Daniela Cambraia",
+            "Direção de Fotografia": "Ceres Canedo",
+            "Produção executiva": "Daniela Cambraia",
+            "Direção de Produção": "Josiane Santos, Marina Soares",
+            "Assistência de Direção": "Mariana de Melo",
+            "1ª Assistência de Câmera": "Débora Vieira",
+            "Elétrica e Maquinári": "Negro Drama",
+            "Assistência de Elétrica e Maquinária": "Leonardo Branco",
+            "Direção de Arte": "Lorena Maruch",
+            "1ª Assistência de Arte e Produção de Objeto": "Luma Azevedo",
+            "2ª Assistência de Arte": "Bruna Maynart",
+            "3ª Assistência de Arte": "Letícia Guisard",
+            "Figurino e Maquiagem": "Cookie, Carina Fonsc",
+            "Montagem": "Yasmin Guimarães",
+            "Assistência de Montagem": "Daniela Cambraia",
+            "Colorização": "Luiza Almeida - Rec Color",
+            "Desenho de som e Mixagem": "Gabriel Canedo",
+            "Som direto": "Montívia",
+            "Ass. som direto": "Isabela Renault",
+            "Arte gráfica":"Melissa Lettieri"
+        },
+        "galeria": [
+            "/filmes/teamoenosol/1.png",
+            "/filmes/teamoenosol/2.png",
+            "/filmes/teamoenosol/3.png",
+            "/filmes/teamoenosol/4.png",
+            "/filmes/teamoenosol/5.png"
+        ],
+        "festivais": [
+            "25ª Mostra de Cinema de Tiradentes - Mostra Foco (competitiva)",
+            "15º Festival Visões Periféricas - Mostra Fronteiras Imaginárias (competitiva)"
+        ]
+    },
+    {
+        "id":"2",
         "name":"Alienígenas do Passado",
         "uri": "alienigenas-do-passado",
         "img":"/filmes/01.png",
         "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
         "poster":"/filmes/alienigenas/poster.jpg",
-        "ano":"inédito",
+        "ano":"2021",
         "duração": 9,
         "classificação": "Livre",
         "sinopse": "Um grupo de amigas investiga o boato da aparição de um portal intergaláctico que causou um acidente de carro. A verdade mudará suas vidas para sempre.",
@@ -50,7 +98,7 @@
     },
 
     {
-        "id":"2",
+        "id":"3",
         "name":"O Som dos Metais",
         "uri": "o-som-dos-metais",
         "img":"/filmes/02.png",
@@ -88,7 +136,7 @@
     },
 
     {
-        "id":"3",
+        "id":"4",
         "name":"Peixe",
         "uri": "peixe",
         "img":"/filmes/03.png",
@@ -181,7 +229,7 @@
     },
 
     {
-        "id":"4",
+        "id":"",
         "name":"Salve Todos",
         "uri": "salve-todos",
         "img":"/filmes/04.png",

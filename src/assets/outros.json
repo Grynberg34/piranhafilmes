@@ -1,0 +1,157 @@
+[
+    {
+        "id":"1",
+        "name":"paNpa",
+        "uri": "panpa",
+        "img":"/outros/01.png",
+        "link":"",
+        "ano":"2021",
+        "tipo": "institucional",
+        "ficha": {
+            "Design Gráfico e Identidade Visual": "Victor Brasileiro",
+            "Aplicação e Motion": "Yasmin Guimarães",
+            "Trilha Sonora e Efeitos Sonoros": "Pedro Cambraia"            
+        },
+        "temporadas" : [
+            {
+                "Número": "1, 2 e 3",
+                "Produção": "Daniela Cambraia",
+                "Direção": "Mariana de Melo e Yasmin Guimarães",
+                "Câmera e Iluminação": "João Otávio Bandeira",
+                "Técnica de Som": "Karen Suzane",
+                "Edição e Finalização": "Daniela Cambraia e Yasmin Guimarães",
+                "Catering": "Cecília Bandeira"
+            },
+            {
+                "Número": "4, 5 e 6",
+                "Produção": "Josiane Santos e Daniela Cambraia",
+                "Direção": "Daniela Cambraia e Yasmin Guimarães",
+                "Câmera e Iluminação": "Ceres Canedo",
+                "Técnicos de Som": "Karen Suzane e Sérgio Salum",
+                "Edição e Finalização": "Daniela Cambraia e Yasmin Guimarães"
+
+            },
+            {
+                "Número": "7, 8 e 9",
+                "Produção": "Josiane Santos",
+                "Direção": "Daniela Cambraia",
+                "Câmera e Iluminação": "Fernanda de Sena",
+                "Técnicas de Som": "Flora Guerra e Marcela Santos",
+                "Edição e Finalização": "Daniela Cambraia e Yasmin Guimarães"
+            }
+
+        ],
+        "galeria": [
+            "/outros/panpa/01.png",
+            "/outros/panpa/02.png",
+            "/outros/panpa/03.png",
+            "/outros/panpa/04.png"
+        ]
+    },
+
+    {
+        "id":"2",
+        "name":"Ligeiro",
+        "uri": "ligeiro",
+        "img":"/outros/02.png",
+        "link": "https://www.youtube.com/embed/fZ7CvPd4Omc?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
+        "ano":"2020",
+        "tipo": "clipe",
+        "ficha": {
+            "Produção": "Piranha outros",
+            "Produção Executiva": "Mina Produz, Jojo Ziller",
+            "Direção": "Yasmin Guimarães e Mariana de Melo",
+            "Roteiro": "Yasmin Guimarães e Mariana de Melo",
+            "Direção de Produção": "Mariana de Melo e Daniela Cambraia",
+            "Assistência de Direção": "Mariana de Melo",
+            
+            "Direção de fotografia e câmera": "Ceres Canedo",
+            "1º assistente de câmera": "Bernard Machado",
+            "Elétrica e Maquinária": "Bernard Machado",
+            
+            "Direção de Arte e Cenografia": "Lorena Maruch",
+            "1ª Assistência de Arte e Cenografia": "Camila Buzelin",
+            "2ª Assistência de Arte e Cenografia": "Stephanie Ribeiro",
+            "3ª Assistência de Arte e Cenografia": "Luma Zauli",
+            "4ª Assistência de Arte e Cenografia":  "Leonardo Branco",
+            
+            "Figurino": "Carina Fonsc e Cookie",
+            "Marcas": "Maria Cajuína, Triana, Euro Blazer",
+            
+            "Maquiagem": "Jojo Ziller",
+            
+            "Edição e Montagem": "Daniela Cambraia e Yasmin Guimarães",
+            "Colorização": "Estúdio Medianera  - Júlia Raad",
+            "Motorista": "Almin Bah",
+            
+            "Composição": "Marina Miglio",
+            
+            "Voz": "Marina Miglio, Hugo Zschaber",
+            "Voz, violão e guitarra": "Cotô Delamarque",
+            "Guitarra": "Stenio Galgani",
+            "Baixo": "Calvin Delamarque",
+            "Percussão": "Bino Carvalho e Thiago Groove",
+            "Beat e Programações": "Cidoca"
+        },
+        "galeria": [
+            "/outros/ligeiro/01.png",
+            "/outros/ligeiro/02.png",
+            "/outros/ligeiro/03.png",
+            "/outros/ligeiro/04.png",
+            "/outros/ligeiro/05.png"
+        ]
+    },
+
+    {
+        "id":"3",
+        "name":"Prêmio Décio Noviello 2020",
+        "uri": "decio-noviello",
+        "img":"/outros/03.png",
+        "link":"",
+        "ano":"2020",
+        "tipo": "institucional",
+        "ficha": {
+            "Produção": "Mariana de Melo",
+            "Direção": "Yasmin Guimarães",
+            "Fotografia": "Bernard Machado",
+            "Captação de Áudio": "Yasmin Guimarães",
+            "Edição e Finalização": "Yasmin Guimarães"
+        },
+        "galeria": [
+            "/outros/decio/01.png",
+            "/outros/decio/02.png",
+            "/outros/decio/03.png",
+            "/outros/decio/04.png",
+            "/outros/decio/05.png"
+        ]
+    },
+
+    {
+        "id":"4",
+        "name":"Mistério Anil",
+        "uri": "misterio-anil",
+        "img":"/outros/04.png",
+        "link": "https://www.youtube.com/embed/z4UTLpVBXEM?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
+        "ano":"2019",
+        "tipo": "clipe",
+        "ficha": {
+            "Produção": "Piranha outros",
+            "Direção": "Yasmin Guimarães",
+            "Direção de Produção": "Daniela Cambraia e Pedro Cambraia",
+            "Direção de Fotografia": "Kívia Nascentes",
+            "Direção de Arte": "Gabriela Seraphim",
+            "Maquinário": "Luciano Nego Drama",
+            
+            "GUADUA": "Rafael Fantini, João Myrrha e Pedro Fonseca",
+            
+            "Produção musical": "Guadua e Pedro Cambraia",
+            "Mix": "Pedro Cambraia no Bioma",
+            "Master": "Chico Neves no 304, Macacos - MG",
+            "Produção executiva": "Joana Ziller"
+            
+        },
+        "galeria": [
+            "/outros/misterio/01.png"
+        ]
+    }
+]

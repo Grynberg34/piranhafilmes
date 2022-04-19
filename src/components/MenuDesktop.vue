@@ -17,10 +17,8 @@
         <div class="menu">
 
           <router-link class="link" :to="{ name: 'filmes'}">FILMES</router-link>
-          <router-link class="link" :to="{ name: 'filmes'}">VIDEOCLIPES</router-link>
-          <router-link class="link" :to="{ name: 'filmes'}">OUTROS</router-link>
-          <router-link class="link" :to="{ name: 'filmes'}">PRODUTORA</router-link>
-          <router-link class="link" :to="{ name: 'filmes'}">CONTATO</router-link>
+          <router-link class="link" :to="{ name: 'outros'}">OUTROS</router-link>
+          <router-link class="link" :to="{ name: 'produtora'}">PRODUTORA</router-link>
 
         </div>
 

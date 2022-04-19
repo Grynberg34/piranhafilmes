@@ -11,10 +11,8 @@
 
       <div class="menu">
         <router-link class="link" :to="{ name: 'filmes'}">FILMES</router-link>
-        <router-link class="link" :to="{ name: 'filmes'}">VIDEOCLIPES</router-link>
-        <router-link class="link" :to="{ name: 'filmes'}">OUTROS</router-link>
-        <router-link class="link" :to="{ name: 'filmes'}">PRODUTORA</router-link>
-        <router-link class="link" :to="{ name: 'filmes'}">CONTATO</router-link>
+        <router-link class="link" :to="{ name: 'outros'}">OUTROS</router-link>
+        <router-link class="link" :to="{ name: 'produtora'}">PRODUTORA</router-link>
       </div>
 
       <router-view></router-view>
@@ -79,7 +77,7 @@
 
   .menu {
     position: absolute;;
-    top: 32%;
+    top: 40%;
     left: 58%;
     z-index: 1;
     opacity: 0.7;

@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Filmes from './components/Filmes.vue';
 import Filme from './components/Filme.vue';
+import Outros from './components/Outros.vue';
+import Outro from './components/Outro.vue';
 import Home from './components/Home.vue';
 import { store } from './store';
 
@@ -20,7 +22,9 @@ Vue.use(Router);
 const routes = [
   { path: "/", name:'home', component: Home },
   { path: "/filmes", name:'filmes', component: Filmes },
-  { path: "/filmes/:id", name:'filme', component: Filme }
+  { path: "/filmes/:id", name:'filme', component: Filme },
+  { path: "/outros", name:'outros', component: Outros },
+  { path: "/outros/:id", name:'outro', component: Outro },
 ];
 
 const router = new Router({
