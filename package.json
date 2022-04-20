@@ -5,8 +5,8 @@
   "scripts": {
     "start": "cross-env NODE_OPTIONS='--openssl-legacy-provider' node server",
     "serve": "cross-env NODE_OPTIONS='--openssl-legacy-provider' vue-cli-service serve",
-    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' vue-cli-service build",
-    "lint": "cross-env NODE_OPTIONS='--openssl-legacy-provider' vue-cli-service lint",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
     "postinstall": "npm run build"
   },
   "dependencies": {
