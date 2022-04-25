@@ -48,31 +48,11 @@
         },
         mounted() {
             this.activeMenu();
-            this.mobileMenu();
         },
         methods: {
-            mudarFiltro(event) {
-                this.filtro = event.target.id;
-
-                var filtros = document.getElementsByClassName('filtro__lista__opcao');
-
-                for (var i=0; i < filtros.length; i++ ) {
-                    filtros[i].style.textDecoration = "none";
-                }
-
-                event.target.style.textDecoration = "overline underline"
-                
-            },
             activeMenu() {
                 document.getElementsByClassName('link')[0].style.color = "white";
             },
-            mobileMenu() {
-                if (window.innerWidth < 768) {
-                    document.getElementsByClassName('filtro__title')[0].innerText = 'Filmes';
-                    document.getElementsByClassName('title')[0].style.display = "none";
-
-                }
-            }
         }
     }
         

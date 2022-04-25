@@ -6,7 +6,8 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state: {
 
-        modalShow: false
+        modalShow: false,
+        activeBio: 1
 
     },
     mutations: {
@@ -16,10 +17,16 @@ export const store = new Vuex.Store({
         modalShowHide (state) {
             state.modalShow = !state.modalShow;
         },
+        setActiveBio(state, id) {
+            state.activeBio = id
+        }
     },
     getters: {
         getModal: state => {
           return state.modalShow
+        },
+        getActiveBio: state => {
+            return state.activeBio
         },
 
     },

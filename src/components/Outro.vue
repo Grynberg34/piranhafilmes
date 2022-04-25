@@ -294,6 +294,18 @@
             font-size: 36px;
         }
 
+        .title {
+            font-size: 28px;
+        }
+
+        .item {
+            font-size: 20px;
+        }
+
+        #sinopse {
+            font-size: 20px;
+        }
+
     }
 
 </style>

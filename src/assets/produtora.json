@@ -1,0 +1,22 @@
+[
+    {
+        "id":"1",
+        "name":"Daniela Cambraia",
+        "img":"/produtora/daniela.png",
+        "text": "Daniela Cambraia é graduada em Cinema e Audiovisual pelo Centro Universitário UNA.  Trabalha com produção e realização cinematográfica.\n \nNa produtora Anavilhana, trabalhou em diversos projetos como 'Enquanto estamos aqui', de Clarissa Campolina e Luiz Pretti; 'Canção ao Longe', de Clarissa Campolina, entre outros. Foi Produtora Executiva de diversos curta-metragens, entre eles 'A Mulher Que Eu Era', de Karen Suzane, com estreia no FESTin, em Lisboa, e, 'Salve Todos', de Isabela Renault, exibido na 22ª Mostra de Tiradentes. \n \nParticipou como assistente de produção do média-metragem 'Dia de Reis', de Marcos Pimentel, especial de fim de ano da Rede Globo de 2018. Atualmente é sócia da produtora Piranha Filmes. Na Piranha, produziu 'Eu Te Amo É No Sol', curta-metragem de Yasmin Guimarães. Produz o curta 'O Silêncio Elementar”, de Mariana de Melo, e o longa 'Supernova', em desenvolvimento, vencedor do pitching do laboratório do Curta ao Longa do 30º Kinoforum."
+    },
+
+    {
+        "id":"2",
+        "name":"Mariana de Melo",
+        "img":"/produtora/mariana.png",
+        "text": "Mariana de Melo se formou em Cinema e Audiovisual pela Universidade Federal Fluminense. \n \nAtua no campo do cinema mineiro e nacional, principalmente nas áreas de assistência de direção, produção, pesquisa e realização. Como assistente de direção, trabalhou em 'Democracia em Vertigem', 2019, de Petra Costa; 'O Último Episódio', de Maurílio Martins (inédito); 'Os Sapos', de Clara Linhart (inédito); 'Terra Gasta', de João Dumans (inédito); entre outros. \n \nNa área da produção, trabalhou em 'Canção ao Longe', de Clarissa Campolina (inédito;, 'O Lodo', 2020, de Helvécio Ratton; entre outros. Na pesquisa de conteúdo, trabalhou na série 'Rainbow Warriors', da Maria Farinha Filmes (inédito) e na série 'Resíduo', de Marília Rocha (inédita). Desde 2018 trabalha na Piranha Filmes, produtora que co-fundou em Belo Horizonte. \n \nAtualmente, além de se dedicar a assistência de direção, produção e pesquisa em projetos diversos, produz seu filme de estreia, o documentário 'O Silêncio Elementar', em pré-produção."
+    },
+
+    {
+        "id":"3",
+        "name":"Yasmin Guimarães",
+        "img":"/produtora/yasmin.png",
+        "text": "Yasmin Guimarães é bacharel em Cinema e Audiovisual pelo Centro Universitário UNA. \n \nEm 2019, dirigiu o curta-metragem 'Peixe', seu trabalho de conclusão de curso, que estreou na 22ª Mostra de Cinema de Tiradentes e, desde então, circulou por mais de 60 festivais em 10 países, entre eles o XII Janela Internacional de Cinema do Recife e 27º Festival Mix Brasil. \n \nNo mesmo ano, assinou a Direção de Produção do curta-metragem 'A Mulher Que Eu Era', de Karen Suzane, vencedor do 5º Prêmio BDMG Cultural/FCS de Estímulo do Curta-Metragem de Baixo Orçamento, com estreia no FESTin, em Lisboa. \n \nSeu segundo curta-metragem, 'Eu Te Amo é no Sol', estreou na 25ª Mostra de Cinema de Tiradentes, em 2022, na Mostra Foco. Atualmente, desenvolve seu primeiro longa-metragem, 'Supernova', vencedor do Kinoforum Labs 2020."
+    }
+]

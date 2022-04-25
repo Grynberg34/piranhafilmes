@@ -48,7 +48,6 @@
         },
         mounted() {
             this.activeMenu();
-            this.mobileMenu();
         },
         methods: {
             mudarFiltro(event) {
@@ -66,13 +65,6 @@
             activeMenu() {
                 document.getElementsByClassName('link')[1].style.color = "white";
             },
-            mobileMenu() {
-                if (window.innerWidth < 768) {
-                    document.getElementsByClassName('filtro__title')[0].innerText = 'Outros Trabalhos';
-                    document.getElementsByClassName('title')[0].style.display = "none";
-
-                }
-            }
         }
     }
         

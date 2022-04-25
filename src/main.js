@@ -10,6 +10,7 @@ import Filmes from './components/Filmes.vue';
 import Filme from './components/Filme.vue';
 import Outros from './components/Outros.vue';
 import Outro from './components/Outro.vue';
+import Produtora from './components/Produtora.vue';
 import Home from './components/Home.vue';
 import { store } from './store';
 
@@ -25,6 +26,7 @@ const routes = [
   { path: "/filmes/:id", name:'filme', component: Filme },
   { path: "/outros", name:'outros', component: Outros },
   { path: "/outros/:id", name:'outro', component: Outro },
+  { path: "/produtora", name:'produtora', component: Produtora },
 ];
 
 const router = new Router({
