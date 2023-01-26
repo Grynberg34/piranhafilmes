@@ -13,7 +13,7 @@
                     
                     <div class="outro">
                         <h1 class="outro__title">{{outro[0].name}}</h1>
-                        <h2 class="outro__subtitle">{{outro[0].ano}} | {{outro[0].tipo}}</h2>
+                        <h2 class="outro__subtitle">{{outro[0].ano}} | {{outro[0].artista}}</h2>
                         <div class="" id="video">
                             <div v-if="outro[0].link" class='embed-container'><iframe :src="outro[0].link" frameborder='0' allowfullscreen></iframe></div>
                         </div>
@@ -65,7 +65,7 @@
 <script>
   import MenuDesktop from './MenuDesktop.vue';
   import Modal from './Modal.vue';
-  import json from '../assets/outros.json'
+  import json from '../assets/videoclipes.json'
 
 
     export default {

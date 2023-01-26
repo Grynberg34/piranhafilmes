@@ -15,11 +15,13 @@
         </div>
 
         <div class="menu">
-
-          <router-link class="link" :to="{ name: 'filmes'}">FILMES</router-link>
-          <router-link class="link" :to="{ name: 'outros'}">OUTROS</router-link>
+          <button class="link" v-on:click="openFilmes">FILMES</button>
+          <router-link class="link-hidden" :to="{ name: 'filmes'}">LANÇADOS</router-link>
+          <router-link class="link-hidden" :to="{ name: 'desenvolvimento'}">EM DESENVOLVIMENTO</router-link>
+          <button class="link" v-on:click="openOutros">OUTROS TRABALHOS</button>
+          <router-link class="link-hidden" :to="{ name: 'institucionais'}">INSTITUCIONAIS</router-link>
+          <router-link class="link-hidden" :to="{ name: 'videoclipes'}">VIDEOCLIPES</router-link>
           <router-link class="link" :to="{ name: 'produtora'}">PRODUTORA</router-link>
-
         </div>
 
       <router-view></router-view>
@@ -95,7 +97,26 @@
         for (var i=0; i < icons.length; i++) {
           icons[i].addEventListener("click", abrirMenu)
         }
-      }
+      },
+      openFilmes() {
+        if (document.getElementsByClassName('link-hidden')[0].style.display === 'block') {
+          document.getElementsByClassName('link-hidden')[0].style.display = 'none';
+          document.getElementsByClassName('link-hidden')[1].style.display = 'none';
+        } else {
+          document.getElementsByClassName('link-hidden')[0].style.display = 'block';
+          document.getElementsByClassName('link-hidden')[1].style.display = 'block';
+        }
+
+      },
+      openOutros() {
+        if (document.getElementsByClassName('link-hidden')[2].style.display === 'block') {
+          document.getElementsByClassName('link-hidden')[2].style.display = 'none';
+          document.getElementsByClassName('link-hidden')[3].style.display = 'none';
+        } else {
+          document.getElementsByClassName('link-hidden')[2].style.display = 'block';
+          document.getElementsByClassName('link-hidden')[3].style.display = 'block';
+        }
+      },
     },
   }
 
@@ -132,13 +153,33 @@
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 10px;
-    letter-spacing: 2px;
     text-align: center;
+    background: none;
+    padding: 0;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .link:hover {
     text-decoration: none;
     color: white;
+  }
+
+  .link-hidden {
+    display: none;
+    z-index: 4;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .link-hidden:hover {
+    color: white;
+    font-weight: 700;
   }
 
   .blue{

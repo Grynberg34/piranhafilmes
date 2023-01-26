@@ -1,9 +1,9 @@
 <template>
-    <router-link class="link" :to="{ name: 'outro', params: {id: uri}}">
-        <div class="outro">
-            <h2 class="outro__title">{{name}} <span class="outro__ano">| {{ano}} | {{tipo}} </span></h2>
-            <div class="outro__box">
-                <img class="outro__img" v-bind:src="img" alt="">
+    <router-link class="link" :to="{ name: 'filme-des', params: {id: uri}}">
+        <div class="filme">
+            <h2 class="filme__title">{{name}} <span class="filme__ano">| {{fase}} </span></h2>
+            <div class="filme__box">
+                <img class="filme__img" v-bind:src="img" alt="">
             </div>
         </div>
     </router-link>
@@ -11,13 +11,13 @@
 
 <script>
 export default {
-    props: ['name', 'img', 'ano', 'status', 'tipo', 'uri'],
+    props: ['name', 'fase', 'img', 'uri'],
 }
 </script>
 
 
 <style scoped>
-    .outro {
+    .filme {
         margin-top: 4vw;
         cursor: pointer;
         width: 60%;
@@ -28,7 +28,7 @@ export default {
         overflow: hidden;
     }
 
-    .outro__title {
+    .filme__title {
         font-size: 20px;
         font-weight: 400;
         color: white;
@@ -37,32 +37,32 @@ export default {
         margin-bottom: 0.2vw;
     }
 
-    .outro__ano {
+    .filme__ano {
         color: #b8b8b8;
     }
 
-    .outro__box {
+    .filme__box {
         max-width: 100%;
         max-height: 100%;
         overflow: hidden;
 
     }
 
-    .outro__img {
+    .filme__img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
         overflow: hidden;
-        transition: all 2s ease-in-out;
+        transition: all 4s ease-in-out;
     }
 
-    .outro__img:hover {
+    .filme__img:hover {
         transform: scale(1.25);
     }
     
 
-    .outro__status {
+    .filme__status {
         display: inline-block;
         width: 12px;
         margin-bottom: 3px;
@@ -74,20 +74,20 @@ export default {
 
     @media only screen and (max-width: 767px) {
 
-        .outro {
+        .filme {
             width: 90%;
             margin-bottom: 14vw;
         }
 
-        .outro_box {
+        .filme_box {
             max-width: unset;
         }
 
-        .outro__img:hover {
+        .filme__img:hover {
             transform: none;
         }
 
-        .outro__title {
+        .filme__title {
             font-size: 16px;
         }
     }

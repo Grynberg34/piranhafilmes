@@ -17,7 +17,6 @@
             "Produção": "Daniela Cambraia, Mariana de Melo, Yasmin Guimarães",
             "Assistência de Produção": "Daniela Cambraia",
             "Direção de Fotografia": "Ceres Canedo",
-            "Produção executiva": "Daniela Cambraia",
             "Direção de Produção": "Josiane Santos, Marina Soares",
             "Assistência de Direção": "Mariana de Melo",
             "1ª Assistência de Câmera": "Débora Vieira",
@@ -45,58 +44,27 @@
         ],
         "festivais": [
             "25ª Mostra de Cinema de Tiradentes - Mostra Foco (competitiva)",
-            "15º Festival Visões Periféricas - Mostra Fronteiras Imaginárias (competitiva)"
+            "15º Festival Visões Periféricas - Mostra Fronteiras Imaginárias (competitiva)",
+            "21ª Goiânia Mostra Curtas - Mostra Nacional (competitiva)",
+            "7º DIGO - Mostra Nacional (competitiva)",
+            "5ª Mostra Lugar de Mulher é no Cinema",
+            "RIO LGBTQIA+ 2022",
+            "X Curta O Gênero - Mostra Nacional",
+            "I Mostra de Cinema da Mulher LBT",
+            "24º FestCurtasBH - Mostra Nacional",
+            "8º Recifest",
+            "Circuito Penedo de Cinema 2022",
+            "6º Curta Suzano",
+            "48º Festival de Huelva | Cine Iberoamericano",
+            "30º Festival Mix Brasil de Cultura da Diversidade",
+            "Mostra de Cinema da Mulher LBT"
+        ],
+        "prêmios" : [
+            "Prêmios de Melhor Atuação e Menção Honrosa no 7º DIGO",
+            "Melhor Interpretação em Papel Coadjuvante (Mônica Maria) pelo júri do 6º Curta Suzano",
+            "Menção Honrosa da Mostra Competitiva Brasil no 24º Festcurtas"
         ]
     },
-    {
-        "id":"2",
-        "name":"Alienígenas do Passado",
-        "uri": "alienigenas-do-passado",
-        "img":"/filmes/01.png",
-        "link":"https://www.youtube.com/embed/?feature=oembed&amp;autoplay=0&amp;playsinline=1&amp;wmode=opaque&amp;loop=0&amp;controls=1&amp;mute=0&amp;rel=0&amp;modestbranding=1",
-        "poster":"/filmes/alienigenas/poster.jpg",
-        "ano":"2021",
-        "duração": 9,
-        "classificação": "Livre",
-        "sinopse": "Um grupo de amigas investiga o boato da aparição de um portal intergaláctico que causou um acidente de carro. A verdade mudará suas vidas para sempre.",
-        "ficha" : {
-            "Direção": "Daniela Cambraia",
-            "Assistência de Direção": "Eduarda Viana",
-            "Continuísmo": "Guilherme Jardim",
-            "Roteiro Original": "Daniela Cambraia",
-            "Direção de Produção": "Josiane Santos",
-            "Assistência de Produção": "Daniela Cambraia",
-            "Platô": "Marina Lamas",
-            "Direção de Fotografia": "Pedro Henriques",
-            "Som direto": "Rebecca Francoff",
-            "Assistente de Som": "Marina Lamas",
-            "Direção de Arte": "Gabriel Vieira Moura",
-            "Assistente de Direção de Arte": "Yeska Ferber",
-            "Maquiagem": "Yeska Ferber",
-            "Figurino": "Gabi Fausto e Gabriel Vieira Moura",
-            "Edição e Montagem": "Rebecca Francoff, Daniela Cambraia e Yasmin Guimarães",
-            "Finalização e Colorização": "Yasmin Guimarães e Daniela Cambraia",
-            "Desenho de Som e Mixagem": "Pedro Henriques",
-            "Trilha Sonora Original": "Pedro Cambraia",
-            "Produção Executiva": "Daniela Cambraia",
-            "Elenco": "Rebeca Kassab, Ndpcon, Paula Libéria, Ana Gabi, Erika Rohlfs, Daniel Jaber, Luis Otávio Botelho, Daniel Bragança",
-            "Produção de Elenco": "Daniela Cambraia e Josiane Santos",
-            "Preparação de Elenco": "Ana Gabi",
-            "Fotografia Still": "Marina Lamas",
-            "Making Of": "Yasmin Guimarães",
-            "Apoio": "Centro Universitário UNA, Produtora Dígito Zero, Núcleo Audiovisual NAV, Centoeoito Filmes",
-            "Produção": "Piranha Filmes",
-            "Distribuição": "Piranha Filmes"    
-        },
-        "galeria": [
-            "/filmes/alienigenas/1.jpg",
-            "/filmes/alienigenas/2.jpg",
-            "/filmes/alienigenas/3.jpg",
-            "/filmes/alienigenas/4.jpg",
-            "/filmes/alienigenas/5.jpg"
-        ]
-    },
-
     {
         "id":"3",
         "name":"O Som dos Metais",
@@ -127,7 +95,8 @@
             "2ª Edição da Mostra Macambira",
             "First-Time Filmmaker Sessions / First-Time Filmmaker Online Sessions", 
             "Les Mains Gauches | Online platform", 
-            "CURVA DO RIO | Festival de Cinema Universitário"
+            "CURVA DO RIO | Festival de Cinema Universitário",
+            "Circuito Penedo de Cinema 2021"
         ],
         "galeria": [
             "/filmes/som/1.jpg",

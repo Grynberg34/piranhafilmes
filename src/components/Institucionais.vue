@@ -10,9 +10,9 @@
                     
                     <div class=" filmes">
 
-                        <h1 class="title">Outros Trabalhos</h1>
+                        <h1 class="title">Institucionais</h1>
 
-                        <OutroBanner v-for="outro in outros" v-bind:key="outro.id" :name="outro.name" :img="outro.img" :ano="outro.ano" :tipo="outro.tipo" :uri="outro.uri" />
+                        <InstitucionalBanner v-for="outro in outros" v-bind:key="outro.id" :name="outro.name" :img="outro.img" :ano="outro.ano" :tipo="outro.tipo" :uri="outro.uri" />
 
 
                     </div>
@@ -29,16 +29,16 @@
 </template>
 
 <script>
-  import OutroBanner from './OutroBanner.vue';
+  import InstitucionalBanner from './InstitucionalBanner.vue';
   import MenuDesktop from './MenuDesktop.vue';
-  import json from '../assets/outros.json'
+  import json from '../assets/institucionais.json'
 
 
     export default {
-        name:'Outros',
+        name:'Institucionals',
         components: {
             MenuDesktop,
-            OutroBanner
+            InstitucionalBanner
         },
         data(){
             return {

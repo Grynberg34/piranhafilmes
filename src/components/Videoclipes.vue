@@ -10,9 +10,9 @@
                     
                     <div class=" filmes">
 
-                        <h1 class="title">Filmes lançados</h1>
+                        <h1 class="title">Videoclipes</h1>
 
-                        <FilmeBanner v-for="filme in filmes" v-bind:key="filme.id" :name="filme.name" :duração="filme.duração"  :img="filme.img" :ano="filme.ano" :uri="filme.uri" />
+                        <VideoclipeBanner v-for="outro in outros" v-bind:key="outro.id" :artista="outro.artista" :name="outro.name" :img="outro.img" :ano="outro.ano" :tipo="outro.tipo" :uri="outro.uri" />
 
 
                     </div>
@@ -29,20 +29,20 @@
 </template>
 
 <script>
-  import FilmeBanner from './FilmeBanner.vue';
+  import VideoclipeBanner from './VideoclipeBanner.vue';
   import MenuDesktop from './MenuDesktop.vue';
-  import json from '../assets/filmes.json'
+  import json from '../assets/videoclipes.json'
 
 
     export default {
-        name:'Filmes',
+        name:'Videoclipes',
         components: {
             MenuDesktop,
-            FilmeBanner
+            VideoclipeBanner
         },
         data(){
             return {
-                filmes: json,
+                outros: json,
                 filtro: 'todos'
             }
         },
@@ -50,8 +50,20 @@
             this.activeMenu();
         },
         methods: {
+            mudarFiltro(event) {
+                this.filtro = event.target.id;
+
+                var filtros = document.getElementsByClassName('filtro__lista__opcao');
+
+                for (var i=0; i < filtros.length; i++ ) {
+                    filtros[i].style.textDecoration = "none";
+                }
+
+                event.target.style.textDecoration = "overline underline"
+                
+            },
             activeMenu() {
-                document.getElementsByClassName('link')[0].style.color = "white";
+                document.getElementsByClassName('link')[1].style.color = "white";
             },
         }
     }

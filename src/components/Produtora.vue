@@ -14,9 +14,8 @@
 
                         <p class="text">
                             A Piranha Filmes nasceu em Belo Horizonte em 2019, fundada por Daniela Cambraia, Yasmin Guimarães e Mariana de Melo. <br><br>
-                            A Piranha dedica-se principalmente à produção cinematográfica, priorizando projetos com potências artísticas e políticas; equipes diversas e busca novas maneiras do fazer cinematográfico, que se dêem através de construções colaborativas e dinâmicas de trabalho respeitosas. <br><br>
-                            Seus curtas-metragens circularam alguns dos maiores festivais de cinema do Brasil, como a Mostra de Cinema de Tiradentes, a Janela de Cinema do Recife, o Mix Brasil e outros. Seus projetos de longas, em desenvolvimento, têm circulado em laboratórios brasileiros. <br><br>
-                            No que tange o desenvolvimento de seus projetos e parcerias, Daniela, Mariana e Yasmin buscam aliar a competência da produção à criatividade.
+                            Nos dedicamos majoritariamente à produção cinematográfica. Buscamos contar histórias cujas potências sejam políticas e poéticas e através de um fazer cinematográfico que seja colaborativo e respeitoso. <br><br>
+                            Nosso catálogo de projetos conta com curtas exibidos nos maiores festivais de cinema do Brasil e projetos entre longas e curtas em diferentes estágios de desenvolvimento.
                         </p>
 
 

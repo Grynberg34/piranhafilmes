@@ -1,0 +1,88 @@
+[
+    {
+        "id":"1",
+        "name":"Alienígenas do Passado",
+        "uri": "alienigenas-do-passado",
+        "img":"/filmes/01.png",
+        "fase": "pós-produção",
+        "sinopse": "Um grupo de amigas investiga o boato da aparição de um portal intergaláctico que causou um acidente de carro. A verdade mudará suas vidas para sempre.",
+        "ficha" : {
+            "Direção": "Daniela Cambraia",
+            "Assistência de Direção": "Eduarda Viana",
+            "Continuísmo": "Guilherme Jardim",
+            "Roteiro Original": "Daniela Cambraia",
+            "Direção de Produção": "Josiane Santos",
+            "Assistência de Produção": "Daniela Cambraia",
+            "Platô": "Marina Lamas",
+            "Direção de Fotografia": "Pedro Henriques",
+            "Som direto": "Rebecca Francoff",
+            "Assistente de Som": "Marina Lamas",
+            "Direção de Arte": "Gabriel Vieira Moura",
+            "Assistente de Direção de Arte": "Yeska Ferber",
+            "Maquiagem": "Yeska Ferber",
+            "Figurino": "Gabi Fausto e Gabriel Vieira Moura",
+            "Edição e Montagem": "Rebecca Francoff, Daniela Cambraia e Yasmin Guimarães",
+            "Finalização e Colorização": "Yasmin Guimarães e Daniela Cambraia",
+            "Desenho de Som e Mixagem": "Pedro Henriques",
+            "Trilha Sonora Original": "Pedro Cambraia",
+            "Produção Executiva": "Daniela Cambraia",
+            "Elenco": "Rebeca Kassab, Ndpcon, Paula Libéria, Ana Gabi, Erika Rohlfs, Daniel Jaber, Luis Otávio Botelho, Daniel Bragança",
+            "Produção de Elenco": "Daniela Cambraia e Josiane Santos",
+            "Preparação de Elenco": "Ana Gabi",
+            "Fotografia Still": "Marina Lamas",
+            "Making Of": "Yasmin Guimarães",
+            "Apoio": "Centro Universitário UNA, Produtora Dígito Zero, Núcleo Audiovisual NAV, Centoeoito Filmes",
+            "Produção": "Piranha Filmes",
+            "Distribuição": "Piranha Filmes"    
+        }
+    },
+    {
+        "id":"2",
+        "name":"Terra no Olho",
+        "uri": "terra-no-olho",
+        "img":"/filmes/terra.png",
+        "fase": "em desenvolvimento",
+        "sinopse": "Em uma mistura de romance, road movie e thriller, Terra no Olho conta a história de Érica, uma arquiteta, que se apaixona por Rita, uma mulher mais jovem que trabalha no campo. Contudo, o encantamento do começo da relação dá lugar à incomunicabilidade, em uma narrativa que pouco a pouco torna-se sombria e violenta.",
+        "ficha" : {
+            "Direção": "Yasmin Guimarães",
+            "Roteiro": "Yasmin Guimarães",
+            "Produção": "Daniela Cambraia e Mariana de Melo"
+        },
+        "prêmios" : [
+            "Prêmio Nuevas Miradas - 13º Brasil CineMundi – 12th International Coproduction Meeting",
+            "Prêmio de la Cátedra de Guión - Nuevas Miradas 2022"   
+        ]
+    },
+    {
+        "id":"3",
+        "name":"O Silêncio Elementar",
+        "uri": "o-silencio-elementar",
+        "img":"/filmes/silencio.png",
+        "fase": "pós-produção",
+        "sinopse": "O curta-metragem explora poeticamente as relações do povo e do território de Minas Gerais com a mineração, atividade fundadora e carro chefe econômico do estado.",
+        "ficha" : {
+            "Direção": "Mariana de Melo",
+            "Roteiro": "Mariana de Melo",
+            "Produção": "Daniela Cambraia, Mariana de Melo, Yasmin Guimarães"
+        }
+    },
+    {
+        "id":"4",
+        "name":"Me entregue para o carnaval",
+        "uri": "me-entregue",
+        "img":"/filmes/carnaval.png",
+        "fase": "pré-produção",
+        "sinopse": "Em luto pela morte de seu pai, Daiane quer curtir o carnaval e em uma rede social, encontra Jéssica que está ansiosa para a folia, mas que lida com o apagamento da memória de seu avô que está com Alzheimer. As duas passam o carnaval juntas, desenvolvendo uma amizade onde descobrem semelhanças em seus estilos de vida, mesmo que distintos.",
+        "ficha" : {
+            "Direção": "Daniela Cambraia e Josiane Santos",
+            "Roteiro": "Josiane Santos",
+            "Produção": "Daniela Cambraia e Josiane Santos"
+        },
+        "prêmios" : [
+            "Contemplado pelo edital Descentra 2019"
+        ]
+    }
+
+
+
+]

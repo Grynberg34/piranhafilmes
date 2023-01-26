@@ -1,0 +1,74 @@
+[
+    {
+        "id":"1",
+        "name":"paNpa",
+        "uri": "panpa",
+        "img":"/outros/01.png",
+        "link":"",
+        "ano":"2021",
+        "tipo": "institucional",
+        "ficha": {
+            "Design Gráfico e Identidade Visual": "Victor Brasileiro",
+            "Aplicação e Motion": "Yasmin Guimarães",
+            "Trilha Sonora e Efeitos Sonoros": "Pedro Cambraia"            
+        },
+        "temporadas" : [
+            {
+                "Número": "1, 2 e 3",
+                "Produção": "Daniela Cambraia",
+                "Direção": "Mariana de Melo e Yasmin Guimarães",
+                "Câmera e Iluminação": "João Otávio Bandeira",
+                "Técnica de Som": "Karen Suzane",
+                "Edição e Finalização": "Daniela Cambraia e Yasmin Guimarães",
+                "Catering": "Cecília Bandeira"
+            },
+            {
+                "Número": "4, 5 e 6",
+                "Produção": "Josiane Santos e Daniela Cambraia",
+                "Direção": "Daniela Cambraia e Yasmin Guimarães",
+                "Câmera e Iluminação": "Ceres Canedo",
+                "Técnicos de Som": "Karen Suzane e Sérgio Salum",
+                "Edição e Finalização": "Daniela Cambraia e Yasmin Guimarães"
+
+            },
+            {
+                "Número": "7, 8 e 9",
+                "Produção": "Josiane Santos",
+                "Direção": "Daniela Cambraia",
+                "Câmera e Iluminação": "Fernanda de Sena",
+                "Técnicas de Som": "Flora Guerra e Marcela Santos",
+                "Edição e Finalização": "Daniela Cambraia e Yasmin Guimarães"
+            }
+
+        ],
+        "galeria": [
+            "/outros/panpa/01.png",
+            "/outros/panpa/02.png",
+            "/outros/panpa/03.png",
+            "/outros/panpa/04.png"
+        ]
+    },
+    {
+        "id":"2",
+        "name":"Prêmio Décio Noviello 2020",
+        "uri": "decio-noviello",
+        "img":"/outros/03.png",
+        "link":"",
+        "ano":"2020",
+        "tipo": "institucional",
+        "ficha": {
+            "Produção": "Mariana de Melo",
+            "Direção": "Yasmin Guimarães",
+            "Fotografia": "Bernard Machado",
+            "Captação de Áudio": "Yasmin Guimarães",
+            "Edição e Finalização": "Yasmin Guimarães"
+        },
+        "galeria": [
+            "/outros/decio/01.png",
+            "/outros/decio/02.png",
+            "/outros/decio/03.png",
+            "/outros/decio/04.png",
+            "/outros/decio/05.png"
+        ]
+    }
+]

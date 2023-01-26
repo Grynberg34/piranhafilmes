@@ -10,9 +10,9 @@
                     
                     <div class=" filmes">
 
-                        <h1 class="title">Filmes lançados</h1>
+                        <h1 class="title">Filmes em desenvolvimento</h1>
 
-                        <FilmeBanner v-for="filme in filmes" v-bind:key="filme.id" :name="filme.name" :duração="filme.duração"  :img="filme.img" :ano="filme.ano" :uri="filme.uri" />
+                        <DesenvolvimentoBanner v-for="filme in filmes" v-bind:key="filme.id" :name="filme.name" :fase="filme.fase" :img="filme.img" :uri="filme.uri" />
 
 
                     </div>
@@ -29,16 +29,16 @@
 </template>
 
 <script>
-  import FilmeBanner from './FilmeBanner.vue';
+  import DesenvolvimentoBanner from './DesenvolvimentoBanner.vue';
   import MenuDesktop from './MenuDesktop.vue';
-  import json from '../assets/filmes.json'
+  import json from '../assets/desenvolvimento.json'
 
 
     export default {
-        name:'Filmes',
+        name:'Desenvolvimento',
         components: {
             MenuDesktop,
-            FilmeBanner
+            DesenvolvimentoBanner
         },
         data(){
             return {

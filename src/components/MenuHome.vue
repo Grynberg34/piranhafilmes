@@ -10,8 +10,12 @@
       </router-link>
 
       <div class="menu">
-        <router-link class="link" :to="{ name: 'filmes'}">FILMES</router-link>
-        <router-link class="link" :to="{ name: 'outros'}">OUTROS</router-link>
+        <button class="link" v-on:click="openFilmes">FILMES</button>
+        <router-link class="link-hidden" :to="{ name: 'filmes'}">LANÇADOS</router-link>
+        <router-link class="link-hidden" :to="{ name: 'desenvolvimento'}">EM DESENVOLVIMENTO</router-link>
+        <button class="link" v-on:click="openOutros">OUTROS TRABALHOS</button>
+        <router-link class="link-hidden" :to="{ name: 'institucionais'}">INSTITUCIONAIS</router-link>
+        <router-link class="link-hidden" :to="{ name: 'videoclipes'}">VIDEOCLIPES</router-link>
         <router-link class="link" :to="{ name: 'produtora'}">PRODUTORA</router-link>
       </div>
 
@@ -57,6 +61,26 @@
        
 
       },
+      openFilmes() {
+        if (document.getElementsByClassName('link-hidden')[0].style.display === 'block') {
+          document.getElementsByClassName('link-hidden')[0].style.display = 'none';
+          document.getElementsByClassName('link-hidden')[1].style.display = 'none';
+        } else {
+          document.getElementsByClassName('link-hidden')[0].style.display = 'block';
+          document.getElementsByClassName('link-hidden')[1].style.display = 'block';
+        }
+
+      },
+      openOutros() {
+        if (document.getElementsByClassName('link-hidden')[2].style.display === 'block') {
+          document.getElementsByClassName('link-hidden')[2].style.display = 'none';
+          document.getElementsByClassName('link-hidden')[3].style.display = 'none';
+        } else {
+          document.getElementsByClassName('link-hidden')[2].style.display = 'block';
+          document.getElementsByClassName('link-hidden')[3].style.display = 'block';
+        }
+
+      },
     },
   }
 
@@ -77,7 +101,7 @@
 
   .menu {
     position: absolute;;
-    top: 40%;
+    top: 37.5%;
     left: 58%;
     z-index: 1;
     opacity: 0.7;
@@ -91,12 +115,29 @@
     font-weight: 500;
     text-decoration: none;
     margin-bottom: 10px;
-    letter-spacing: 2px;
+    background: none;
+    padding: 0;
+    border: none;
   }
 
   .link:hover {
     text-decoration: none;
     color: white;
+  }
+
+  .link-hidden {
+    display: none;
+    z-index: 4;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .link-hidden:hover {
+    color: white;
+    font-weight: 700;
   }
 
   .blue{
@@ -109,6 +150,18 @@
 
   .pink {
     color: #e62260;
+  }
+
+  .dropdown {
+    display: none;
+    z-index: 4;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+    border: none;
+    background: none;
   }
 
 
@@ -129,6 +182,15 @@
 
     .link {
       font-size: 25px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .link-hidden {
+      font-size: 18px;
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
     }
 
