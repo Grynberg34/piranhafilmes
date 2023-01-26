@@ -106,7 +106,7 @@
     @media only screen and (max-width: 767px) {
         
         .title {
-            font-size: 40px;
+            font-size: 30px;
             margin-top: 20vw;
             margin-bottom: 10vw;
         }
